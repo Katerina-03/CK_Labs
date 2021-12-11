@@ -4,7 +4,7 @@
 
 int flag = 1;
 
-TEST(TestCaseName, TestName) {
+TEST(Test, TestPrint) {
 EXPECT_TRUE(flag);
 }
 
