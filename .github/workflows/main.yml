@@ -1,6 +1,9 @@
 # Copyleft by Ekaterina Vasilieva 2021.
 
 name: MyGitHubActions
+env: 
+  APPLICATION_NAME: "MyFlake"
+  PACKAGE_NAME: "flask"
 
 on:
 
@@ -25,8 +28,15 @@ jobs:
 
       - name: Print Hello Message
         run: echo Hello, world!
-
+        
+      - name: List current folder
+        run: ls -la
+          
       - name: Print Hello Message
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+      - name: Lest test some packages if the are here
+        run: aws --version
+
