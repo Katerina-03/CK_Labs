@@ -39,4 +39,12 @@ jobs:
           
       - name: Lest test some packages if the are here
         run: aws --version
+        
+      - name: 'Upload Artifact'
+        uses: actions/upload-artifact@v2
+        with:
+          name: my-artifact
+          path: my_file.txt
+          retention-days: 365
+          
 
