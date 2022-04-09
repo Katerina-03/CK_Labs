@@ -5,8 +5,8 @@ using namespace std;
 
 int main()
 {
-    Queue manager;
-    manager << 10 << 7 << 6 << 8;
-    manager >> 2;
+    Queue my;
+    my << 10 << 7 << 6 << 8;
+    my >> 2;
     return 0;
 }
